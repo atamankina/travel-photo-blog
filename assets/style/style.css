@@ -1,0 +1,28 @@
+.blurry-border-wrapper {
+    position: relative;
+    display: inline-block; /* Ermöglicht die korrekte Positionierung des pseudo-Elements */
+    overflow: visible; /* Verhindert, dass der unscharfe Effekt über den Rand hinausgeht */
+}
+
+.blurry-border-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -0px; 
+    left: -30px;
+    right: -30px; 
+    bottom: -30px; /* Erweitert den Effektbereich um das Bild herum */
+    background-image: url('../images/galina.png'); /* Pfad zu Ihrem Bild */
+    background-size: cover;
+    filter: blur(80px); /* Stärke des Unschärfe-Effekts */
+    z-index: -1; /* Stellt sicher, dass der Effekt hinter dem Bild erscheint */
+}
+
+.blurry-border-wrapper img {
+    display: block; /* Entfernt unerwünschten Abstand unter dem Bild */
+    width: 100%; /* Passt die Breite des Bildes an den Container an */
+    height: auto; /* Behält das Seitenverhältnis bei */
+    border-bottom: solid;
+    border-bottom-width: 1px;
+}
+
+
