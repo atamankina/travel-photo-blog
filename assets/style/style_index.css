@@ -36,6 +36,7 @@ h1 {
     width: 100vw; /* Optional, falls Sie auch die Breite auf 100% des Viewports setzen möchten */
     margin: 0;
     padding: 0;
+    z-index: -10;
 }
 
 .carousel-item img {
