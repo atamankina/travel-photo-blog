@@ -1,0 +1,57 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    position: relative;
+    z-index:0;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.carousel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+    background: radial-gradient(circle at center, #303030 0%, #303030 100%);
+}
+
+.carousel, .carousel-item, .carousel-item img {
+    height: 100vh; /* Setzt die Höhe auf 100% der Viewporthöhe */
+    width: 100vw; /* Optional, falls Sie auch die Breite auf 100% des Viewports setzen möchten */
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item img {
+    object-fit: cover; /* Stellt sicher, dass Bilder den Container bedecken, ohne das Seitenverhältnis zu verlieren */
+    z-index: -1;
+}
+
+.carousel-indicators {
+    z-index: 1050;
+    bottom: 4%;
+    position: absolute;
+}
+
+.carousel-caption {
+    bottom: 5%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 1050;
+    position: absolute;
+}
+
+footer {
+    z-index: 0;
+    filter: invert(1);
+}
+

@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Photo Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/style_index.css">
   </head>
 
-<body class="d-flex flex-column vh-100">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body class="d-flex flex-column vh-100" style="z-index:0">
+    <nav class="navbar navbar-expand-lg" style="z-index:0">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">Galina's Travel Blog</a>
+          <a class="navbar-brand fw-lighter" href="./index.html">Galina's Travel Blog</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,12 +38,11 @@
         </div>
       </nav>
 
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <h1 class="text-center mt-3 mb-5">Welcome to Galina's Travel Photo Blog!</h1>
-                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
+                <h1 class="text-center fw-lighter mt-3 mb-5">Welcome to Galina's Travel Photo Blog</h1>
+                <div id="carouselExampleCaptions" class="carousel carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators" style="z-index:100">
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -52,47 +51,46 @@
                       <div class="carousel-item active">
                         <img src="./assets/images/prague1.jpg" class="d-block w-100" alt="Travel Photo of Prague">
                         <div class="carousel-caption d-none d-md-block">
-                          <h5>Prague</h5>
-                          <p>This is Galina's Travel Photo of Prague.</p>
+                          <h5 class="fw-light">Prague</h5>
+                          <p class="fw-light">This is Galina's Travel Photo of Prague.</p>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img src="./assets/images/berlin2.jpg" class="d-block w-100" alt="Travel Photo of Berlin">
                         <div class="carousel-caption d-none d-md-block">
-                          <h5>Berlin</h5>
-                          <p>This is Galina's Travel Photo of Berlin.</p>
+                          <h5 class="fw-light">Berlin</h5>
+                          <p class="fw-light">This is Galina's Travel Photo of Berlin.</p>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img src="./assets/images/amsterdam2.jpg" class="d-block w-100" alt="Travel Photo of Amsterdam">
                         <div class="carousel-caption d-none d-md-block">
-                          <h5>Amsterdam</h5>
-                          <p>This is Galina's Travel Photo of Amsterdam.</p>
+                          <h5 class="fw-light">Amsterdam</h5>
+                          <p class="fw-light">This is Galina's Travel Photo of Amsterdam.</p>
                         </div>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="z-index:100">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="z-index:100">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-            </div>
         </div>
       </div>
 
-      <div class="container-fluid mt-auto">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-3 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <span class="mb-1 mb-md-0 text-body-secondary">© 2024 Galina's Travel Blog</span>
+      <div class="container-fluid mt-auto" style="z-index:0">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center mb-3" style="z-index:0">
+          <div class="col-md-4 d-flex align-items-center" style="z-index:0">
+            <span class="mb-1 mb-md-0 text-dark fw-semibold">© 2024 Galina's Travel Blog</span>
           </div>
       
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./assets/icons/instagram.svg" alt="instagram" class="img-fluid"></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./assets/icons/facebook.svg" alt="facebook" class="img-fluid"></a></li>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="z-index:0">
+            <li class="ms-3"><a class="text-light fw-semibold" href="#"><img src="./assets/icons/instagram.svg" alt="instagram" class="img-fluid"></a></li>
+            <li class="ms-3"><a class="text-light fw-semibold" href="#"><img src="./assets/icons/facebook.svg" alt="facebook" class="img-fluid"></a></li>
           </ul>
         </footer>
       </div>
