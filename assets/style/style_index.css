@@ -5,6 +5,14 @@ body, html {
     z-index:0;
 }
 
+.navbar {
+    filter: invert(1);
+}
+
+h1 {
+    filter: invert(1);
+}
+
 .dropdown-menu {
     background-color: rgba(0, 0, 0, 0);
 }
