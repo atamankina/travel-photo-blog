@@ -23,8 +23,11 @@
     height: auto; /* Behält das Seitenverhältnis bei */
     border-bottom: solid;
     border-bottom-width: 1px;
+    border-color:black;
 }
 
-
+footer li {
+    filter: invert();
+}
 
 

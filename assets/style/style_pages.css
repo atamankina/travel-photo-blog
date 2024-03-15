@@ -1,0 +1,16 @@
+footer li {
+    filter: invert();
+}
+
+p {
+    font-weight: lighter;
+}
+
+.card, .card img {
+    border-radius: 0;
+    border-width: 0;
+}
+
+.card-body {
+    padding-left: 0;
+}
